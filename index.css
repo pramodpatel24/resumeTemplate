@@ -1,0 +1,170 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    align-items: center;
+    padding: auto;
+    width: 75%;
+    box-sizing: border-box;
+    height: 75rem;
+    line-height: 1.5rem;
+    background: rgb(253, 188, 188);
+}
+
+.section1 {
+    float: left;
+    width: 20%;
+    margin-top: -30px;
+}
+
+.icons {
+    margin: 80px 50px 80px 50px;
+}
+
+.icons>img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 0.2px solid rgb(221, 216, 216);
+    box-shadow: 5px 10px #959393;
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.icons>span {
+    display: block;
+    margin-left: 25px;
+}
+
+
+.section2 {
+    float: left;
+}
+
+.info {
+    margin: 0;
+    padding: 20px 5px 5px 20px;
+    padding-bottom: unset;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    border-right: 2px solid gray;
+}
+
+.work {
+    padding: 0 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+}
+
+.skills {
+    margin: 0;
+    padding-bottom: unset;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+    line-height: 1.5rem;
+}
+
+.leftSkills {
+    float: left;
+    width: 50%;
+    border-right: 2px solid gray;
+
+}
+
+.interest {
+    display: flex;
+    border-bottom: 2px solid gray;
+}
+
+.education {
+    padding: 0 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .container {
+        display: block;
+        width: 75%;
+        height: fit-content;
+        line-height: 1.5rem;
+        background: rgb(253, 188, 188);
+    }
+
+    .section1 {
+        width: 100%;
+    }
+
+    .section2 {
+        float: none;
+    }
+
+    .icons {
+        margin: 0;
+        float: left;
+    }
+
+    .icons>img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        border: 0.2px solid rgb(221, 216, 216);
+        box-shadow: 5px 10px #959393;
+        margin: 10px;
+        cursor: pointer;
+
+    }
+
+    .info {
+        display: block;
+    }
+
+    .left {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .left:nth-child(1) {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .skills {
+        display: block;
+    }
+
+    .leftSkills {
+        float: none;
+        width: 100%;
+        border-right: 0;
+        border-bottom: 2px solid gray;
+    }
+
+    .interest {
+        width: auto;
+    }
+
+    .interest>.icons {
+        margin: 0px 20px;
+    }
+}
